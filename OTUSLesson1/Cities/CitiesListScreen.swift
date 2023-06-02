@@ -10,13 +10,18 @@ import SwiftUI
 struct CitiesListScreen: View {
 
     // MARK: - Properties
+    @ObservedObject var viewModel = CitiesListViewModel()
 
     // MARK: - Body
     
     var body: some View {
         NavigationView {
-            List(0 ..< 5) { item in
-                CityListCell()
+            List(viewModel.weatherList) { item in
+                NavigationLink {
+                    CityDetailScreen(weather: item)
+                } label: {
+                    CityListCell(cityWeather: item)
+                }
             }
         }
     }
