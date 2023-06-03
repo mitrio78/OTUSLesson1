@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  OTUSLesson1
 //
-//  Created by anduser on 02.06.2023.
+//  Created by Dmitriy Grishechko on 02.06.2023.
 //
 
 import SwiftUI
@@ -30,6 +30,11 @@ struct ContentView: View {
                     Label("Map", systemImage: "map")
                 }
         } //: TabView
+        .accentColor(.white)
+        .onAppear() {
+            UITabBar.appearance().barTintColor = .white
+            UITabBar.appearance().unselectedItemTintColor = UIColor(named: "brandStandardLight")
+        }
     }
 }
 
