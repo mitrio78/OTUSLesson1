@@ -54,6 +54,6 @@ struct CitiesListScreen: View {
 
 struct CitiesListView_Previews: PreviewProvider {
     static var previews: some View {
-        CitiesListScreen()
+        CitiesListScreen().environmentObject(Router())
     }
 }
