@@ -2,7 +2,7 @@
 //  OTUSLesson1App.swift
 //  OTUSLesson1
 //
-//  Created by anduser on 02.06.2023.
+//  Created by Dmitriy Grishechko on 02.06.2023.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct OTUSLesson1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView().environmentObject(Router())
         }
     }
 }
