@@ -39,6 +39,7 @@ struct MapScreen: View {
                 }
             } //: ZStack
         } //: NavigationView
+        .navigationViewStyle(.stack)
         .onAppear() {
             UINavigationBar
                 .appearance()

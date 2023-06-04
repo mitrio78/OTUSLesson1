@@ -30,23 +30,33 @@ struct CitiesListScreen: View {
                             CityListCell(cityWeather: item)
                         }
                     }
-                    .listRowBackground(BackgroundView())
+                    .listRowBackground(
+                        BackgroundView()
+                    )
                 }
                 .navigationDestination(for: Int.self, destination: { index in
                     CityDetailScreen(weather: viewModel.weatherList[index])
                 })
                 .navigationTitle("Weather in cities")
                 .listStyle(PlainListStyle())
-                .scrollContentBackground(.hidden)
             } //: ZStack
         } //: NavigationView
         .accentColor(.white)
         .background(.clear)
         .onAppear() {
-            UINavigationBar
-                .appearance()
-                .largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            setNavBarAppearance()
         }
+    }
+
+    private func setNavBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.backgroundColor = .brandStandard
+
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
     }
 }
 
