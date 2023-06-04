@@ -11,6 +11,9 @@ struct MainWeatherScreen: View {
 
     // MARK: - Properties
 
+    @EnvironmentObject var router: Router
+    @ObservedObject var viewModel: MainWeatherViewModel = .init()
+
     // MARK: - Body
 
     var body: some View {
@@ -18,15 +21,18 @@ struct MainWeatherScreen: View {
             BackgroundView()
 
             VStack {
-                TodayWeatherMainItem(weather: WeatherModel.mockWeatherList.first!)
+                TodayWeatherMainItem(weather: viewModel.currentLocationWeather)
                     .frame(maxHeight: 280)
                     .cornerRadius(30)
                     .padding(.leading, 24)
                     .padding(.trailing, 24)
                     .padding(.bottom, 24)
 
-                CustomButton(title: "Show London weather", backGroundColor: .orange) {
-                    // some action
+                CustomButton(title: "Show random weather", backGroundColor: .orange) {
+                    router.selectedTab = 2
+                    router.listPath.append(
+                        Int.random(in: 0..<WeatherModel.mockWeatherList.count)
+                    )
                 }
 
                 Spacer()

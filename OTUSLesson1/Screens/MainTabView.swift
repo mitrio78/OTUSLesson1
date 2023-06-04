@@ -9,23 +9,28 @@ import SwiftUI
 
 // MARK: - ContentView
 
-struct ContentView: View {
+struct MainTabView: View {
 
     // MARK: - Properties
+
+    @EnvironmentObject var router: Router
 
     // MARK: - Body
 
     var body: some View {
-        TabView {
+        TabView(selection: $router.selectedTab) {
             MainWeatherScreen()
+                .tag(1)
                 .tabItem {
                     Label("Weather", systemImage: "sun.haze")
                 }
             CitiesListScreen()
+                .tag(2)
                 .tabItem {
                     Label("Cities", systemImage: "building.2.crop.circle.fill")
                 }
             MapScreen()
+                .tag(3)
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
@@ -33,7 +38,7 @@ struct ContentView: View {
         .accentColor(.white)
         .onAppear() {
             UITabBar.appearance().barTintColor = .white
-            UITabBar.appearance().unselectedItemTintColor = UIColor(named: "brandStandardLight")
+            UITabBar.appearance().unselectedItemTintColor = .brandStandardLight
         }
     }
 }
@@ -42,6 +47,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainTabView()
     }
 }

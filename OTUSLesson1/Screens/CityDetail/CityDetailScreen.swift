@@ -19,12 +19,8 @@ struct CityDetailScreen: View {
         ZStack {
             BackgroundView()
 
-
-
             VStack {
                 TodayWeatherMainItem(weather: weather)
-
-                Spacer()
             } //: VStack
         } //: ZStack
     }

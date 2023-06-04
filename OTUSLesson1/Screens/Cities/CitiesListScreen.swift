@@ -10,18 +10,20 @@ import SwiftUI
 struct CitiesListScreen: View {
 
     // MARK: - Properties
+
     @ObservedObject var viewModel = CitiesListViewModel()
+    @EnvironmentObject var router: Router
 
     // MARK: - Body
     
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $router.listPath) {
             ZStack {
                 BackgroundView()
                     .edgesIgnoringSafeArea(.all)
 
                 List {
-                    ForEach(viewModel.weatherList, id: \.self) { item in
+                    ForEach(viewModel.weatherList, id: \.id) { item in
                         NavigationLink {
                             CityDetailScreen(weather: item)
                         } label: {
@@ -30,6 +32,9 @@ struct CitiesListScreen: View {
                     }
                     .listRowBackground(BackgroundView())
                 }
+                .navigationDestination(for: Int.self, destination: { index in
+                    CityDetailScreen(weather: viewModel.weatherList[index])
+                })
                 .navigationTitle("Weather in cities")
                 .listStyle(PlainListStyle())
                 .scrollContentBackground(.hidden)

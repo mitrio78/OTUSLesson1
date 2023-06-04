@@ -10,6 +10,7 @@ import SwiftUI
 struct CityListCell: View {
 
     // MARK: - Properties
+
     let cityWeather: WeatherModel
 
     // MARK: - Body

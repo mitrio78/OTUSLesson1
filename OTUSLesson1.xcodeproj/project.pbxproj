@@ -11,8 +11,10 @@
 		CA24F9FB2A2BBC1A00206392 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9FA2A2BBC1A00206392 /* Color+Ext.swift */; };
 		CA24F9FE2A2BBCCC00206392 /* SafaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9FD2A2BBCCC00206392 /* SafaryView.swift */; };
 		CA24FA002A2BBDE300206392 /* MapScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9FF2A2BBDE300206392 /* MapScreenViewModel.swift */; };
+		CA24FA022A2C84EB00206392 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA012A2C84EB00206392 /* Router.swift */; };
+		CA24FA052A2C8D7200206392 /* MainWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24FA042A2C8D7200206392 /* MainWeatherViewModel.swift */; };
 		CAC085342A2A4554008B94A9 /* OTUSLesson1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC085332A2A4554008B94A9 /* OTUSLesson1App.swift */; };
-		CAC085362A2A4554008B94A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC085352A2A4554008B94A9 /* ContentView.swift */; };
+		CAC085362A2A4554008B94A9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC085352A2A4554008B94A9 /* MainTabView.swift */; };
 		CAC085382A2A4557008B94A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC085372A2A4557008B94A9 /* Assets.xcassets */; };
 		CAC0853B2A2A4557008B94A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC0853A2A2A4557008B94A9 /* Preview Assets.xcassets */; };
 		CAC085422A2A47DC008B94A9 /* MainWeatherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC085412A2A47DC008B94A9 /* MainWeatherScreen.swift */; };
@@ -31,9 +33,11 @@
 		CA24F9FA2A2BBC1A00206392 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		CA24F9FD2A2BBCCC00206392 /* SafaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafaryView.swift; sourceTree = "<group>"; };
 		CA24F9FF2A2BBDE300206392 /* MapScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenViewModel.swift; sourceTree = "<group>"; };
+		CA24FA012A2C84EB00206392 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CA24FA042A2C8D7200206392 /* MainWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherViewModel.swift; sourceTree = "<group>"; };
 		CAC085302A2A4554008B94A9 /* OTUSLesson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUSLesson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC085332A2A4554008B94A9 /* OTUSLesson1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUSLesson1App.swift; sourceTree = "<group>"; };
-		CAC085352A2A4554008B94A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAC085352A2A4554008B94A9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CAC085372A2A4557008B94A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC0853A2A2A4557008B94A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAC085412A2A47DC008B94A9 /* MainWeatherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherScreen.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		CA24F9F62A2BB3AE00206392 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CAC085352A2A4554008B94A9 /* MainTabView.swift */,
 				CAC085472A2A4BE8008B94A9 /* Main */,
 				CAC085482A2A4BF0008B94A9 /* Cities */,
 				CAC085562A2A5DB7008B94A9 /* CityDetail */,
@@ -93,6 +98,14 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		CA24FA032A2C8A7800206392 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA24FA012A2C84EB00206392 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		CAC085272A2A4554008B94A9 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +127,9 @@
 			children = (
 				CA24F9F92A2BBC0900206392 /* Utils */,
 				CA24F9F52A2BB3A200206392 /* App */,
+				CA24FA032A2C8A7800206392 /* Router */,
 				CA24F9F62A2BB3AE00206392 /* Screens */,
 				CAC0855B2A2BA156008B94A9 /* Views */,
-				CAC085352A2A4554008B94A9 /* ContentView.swift */,
 				CAC085502A2A5837008B94A9 /* Models */,
 				CAC085372A2A4557008B94A9 /* Assets.xcassets */,
 				CAC085392A2A4557008B94A9 /* Preview Content */,
@@ -136,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC085412A2A47DC008B94A9 /* MainWeatherScreen.swift */,
-				CAC0855E2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift */,
+				CA24FA042A2C8D7200206392 /* MainWeatherViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 			children = (
 				CA24F9FC2A2BBCAE00206392 /* UIKit */,
 				CAC0855C2A2BA16A008B94A9 /* BackgroundView.swift */,
+				CAC0855E2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift */,
 				CA24F9F72A2BB94200206392 /* CustomButton.swift */,
 			);
 			path = Views;
@@ -268,11 +282,13 @@
 				CAC085462A2A4BC9008B94A9 /* CityListCell.swift in Sources */,
 				CAC0855F2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift in Sources */,
 				CAC085422A2A47DC008B94A9 /* MainWeatherScreen.swift in Sources */,
+				CA24FA052A2C8D7200206392 /* MainWeatherViewModel.swift in Sources */,
 				CA24F9F82A2BB94200206392 /* CustomButton.swift in Sources */,
 				CAC085542A2A59D2008B94A9 /* CitiesListViewModel.swift in Sources */,
 				CAC085522A2A584A008B94A9 /* WeatherModel.swift in Sources */,
 				CAC0855D2A2BA16A008B94A9 /* BackgroundView.swift in Sources */,
-				CAC085362A2A4554008B94A9 /* ContentView.swift in Sources */,
+				CA24FA022A2C84EB00206392 /* Router.swift in Sources */,
+				CAC085362A2A4554008B94A9 /* MainTabView.swift in Sources */,
 				CAC085342A2A4554008B94A9 /* OTUSLesson1App.swift in Sources */,
 				CA24F9FE2A2BBCCC00206392 /* SafaryView.swift in Sources */,
 				CAC085582A2A5DD8008B94A9 /* CityDetailScreen.swift in Sources */,
