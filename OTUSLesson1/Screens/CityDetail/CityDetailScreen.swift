@@ -21,6 +21,12 @@ struct CityDetailScreen: View {
 
             VStack {
                 TodayWeatherMainItem(weather: weather)
+                .frame(maxHeight: 280)
+                .cornerRadius(30)
+                .padding(.leading, 24)
+                .padding(.trailing, 24)
+
+                Spacer()
             } //: VStack
         } //: ZStack
     }

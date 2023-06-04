@@ -37,7 +37,7 @@ struct MainTabView: View {
         } //: TabView
         .accentColor(.white)
         .onAppear() {
-            UITabBar.appearance().barTintColor = .white
+            UITabBar.appearance().barTintColor = .brandStandard2
             UITabBar.appearance().unselectedItemTintColor = .brandStandardLight
         }
     }

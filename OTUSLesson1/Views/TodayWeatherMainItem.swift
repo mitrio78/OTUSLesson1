@@ -24,7 +24,6 @@ struct TodayWeatherMainItem: View {
                 VStack {
                     Text(weather.cityName)
                         .font(.title)
-                        .padding()
 
                     HStack {
                         Image(systemName: weather.weatherIconName)
@@ -37,14 +36,12 @@ struct TodayWeatherMainItem: View {
                         Text("\(weather.currentTemperature) °C")
                             .font(.system(size: 82, weight: .thin))
                     } //: HStack
-                    .padding(.top, -8)
 
                     Text(weather.description)
                     Text("max: \(weather.maxTemp)°, min: \(weather.minTemp)°")
                 } //: VStack
                 .foregroundColor(.white)
             } //: ZStack
-            .padding(.bottom, 24)
         } //: VStack
     }
 }
