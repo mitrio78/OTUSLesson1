@@ -8,6 +8,5 @@
 import SwiftUI
 
 final class MapScreenViewModel: ObservableObject {
-
     @Published var isShowingModalView: Bool = false
 }

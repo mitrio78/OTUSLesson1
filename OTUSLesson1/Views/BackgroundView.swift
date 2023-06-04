@@ -9,6 +9,10 @@ import SwiftUI
 
 struct BackgroundView: View {
 
+    // MARK: - Properties
+
+    // MARK: - Body
+
     var body: some View {
         LinearGradient(
             gradient: Gradient(
@@ -23,6 +27,8 @@ struct BackgroundView: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
+
+// MARK: - Previews
 
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {

@@ -10,6 +10,7 @@ import SwiftUI
 struct TodayWeatherMainItem: View {
 
     // MARK: - Properties
+    
     let weather: WeatherModel
 
     // MARK: - Body

@@ -8,6 +8,5 @@
 import SwiftUI
 
 final class CitiesListViewModel: ObservableObject {
-
     @Published var weatherList: [WeatherModel] = WeatherModel.mockWeatherList
 }

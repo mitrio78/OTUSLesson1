@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct OTUSLesson1App: App {
+
+    // MARK: - Body
+    
     var body: some Scene {
         WindowGroup {
             MainTabView().environmentObject(Router())
