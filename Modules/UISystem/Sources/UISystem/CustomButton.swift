@@ -7,17 +7,23 @@
 
 import SwiftUI
 
-struct CustomButton: View {
+public struct CustomButton: View {
 
     // MARK: - Previews
 
-    var title: LocalizedStringKey
-    var backGroundColor: Color
-    var action: () -> ()
+    public var title: LocalizedStringKey
+    public var backGroundColor: Color
+    public var action: () -> ()
+
+    public init(title: LocalizedStringKey, backGroundColor: Color, action: @escaping () -> Void) {
+        self.title = title
+        self.backGroundColor = backGroundColor
+        self.action = action
+    }
 
     // MARK: - Previews
 
-    var body: some View {
+    public var body: some View {
         VStack(spacing: 20) {
             Button {
                 action()
@@ -37,6 +43,8 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
+        CustomButton(title: "Title", backGroundColor: .blue, action: { })
+        CustomButton(title: "Title", backGroundColor: .blue, action: { })
         CustomButton(title: "Title", backGroundColor: .blue, action: { })
     }
 }

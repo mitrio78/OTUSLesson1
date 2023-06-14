@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA24F9F82A2BB94200206392 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9F72A2BB94200206392 /* CustomButton.swift */; };
 		CA24F9FB2A2BBC1A00206392 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9FA2A2BBC1A00206392 /* Color+Ext.swift */; };
 		CA24F9FE2A2BBCCC00206392 /* SafaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9FD2A2BBCCC00206392 /* SafaryView.swift */; };
 		CA24FA002A2BBDE300206392 /* MapScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24F9FF2A2BBDE300206392 /* MapScreenViewModel.swift */; };
@@ -26,10 +25,15 @@
 		CAC085582A2A5DD8008B94A9 /* CityDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC085572A2A5DD8008B94A9 /* CityDetailScreen.swift */; };
 		CAC0855D2A2BA16A008B94A9 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0855C2A2BA16A008B94A9 /* BackgroundView.swift */; };
 		CAC0855F2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0855E2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift */; };
+		CAC7B55E2A38C68200191538 /* NewsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7B55D2A38C68200191538 /* NewsListScreen.swift */; };
+		CAC7B5622A38CE4400191538 /* NewsAPINetworking in Frameworks */ = {isa = PBXBuildFile; productRef = CAC7B5612A38CE4400191538 /* NewsAPINetworking */; };
+		CAC7B5642A38CEC000191538 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7B5632A38CEC000191538 /* NewsListViewModel.swift */; };
+		CAC7B5692A38D32C00191538 /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7B5682A38D32C00191538 /* NewsListCell.swift */; };
+		CAC7B56B2A38D37900191538 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7B56A2A38D37900191538 /* NewsModel.swift */; };
+		CAC7B56F2A38DAF200191538 /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = CAC7B56E2A38DAF200191538 /* UISystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA24F9F72A2BB94200206392 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		CA24F9FA2A2BBC1A00206392 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		CA24F9FD2A2BBCCC00206392 /* SafaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafaryView.swift; sourceTree = "<group>"; };
 		CA24F9FF2A2BBDE300206392 /* MapScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenViewModel.swift; sourceTree = "<group>"; };
@@ -49,6 +53,13 @@
 		CAC085572A2A5DD8008B94A9 /* CityDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailScreen.swift; sourceTree = "<group>"; };
 		CAC0855C2A2BA16A008B94A9 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		CAC0855E2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherMainItem.swift; sourceTree = "<group>"; };
+		CAC7B55D2A38C68200191538 /* NewsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListScreen.swift; sourceTree = "<group>"; };
+		CAC7B5632A38CEC000191538 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		CAC7B5662A38D07900191538 /* generate_newsapi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_newsapi.sh; sourceTree = "<group>"; };
+		CAC7B5682A38D32C00191538 /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		CAC7B56A2A38D37900191538 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		CAC7B56C2A38DA3900191538 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = Modules/UISystem; sourceTree = "<group>"; };
+		CAC7B56D2A38DAE700191538 /* NewsAPINetworking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NewsAPINetworking; path = Modules/NewsAPINetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC7B5622A38CE4400191538 /* NewsAPINetworking in Frameworks */,
+				CAC7B56F2A38DAF200191538 /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,7 @@
 				CAC085482A2A4BF0008B94A9 /* Cities */,
 				CAC085562A2A5DB7008B94A9 /* CityDetail */,
 				CAC085492A2A4C1F008B94A9 /* Map */,
+				CAC7B55C2A38C64B00191538 /* NewsList */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -109,8 +123,12 @@
 		CAC085272A2A4554008B94A9 = {
 			isa = PBXGroup;
 			children = (
+				CAC7B56D2A38DAE700191538 /* NewsAPINetworking */,
+				CAC7B56C2A38DA3900191538 /* UISystem */,
+				CAC7B5662A38D07900191538 /* generate_newsapi.sh */,
 				CAC085322A2A4554008B94A9 /* OTUSLesson1 */,
 				CAC085312A2A4554008B94A9 /* Products */,
+				CAC7B5602A38CE4400191538 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC085512A2A584A008B94A9 /* WeatherModel.swift */,
+				CAC7B56A2A38D37900191538 /* NewsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,9 +222,33 @@
 				CA24F9FC2A2BBCAE00206392 /* UIKit */,
 				CAC0855C2A2BA16A008B94A9 /* BackgroundView.swift */,
 				CAC0855E2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift */,
-				CA24F9F72A2BB94200206392 /* CustomButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CAC7B55C2A38C64B00191538 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7B5672A38D31900191538 /* Cell */,
+				CAC7B55D2A38C68200191538 /* NewsListScreen.swift */,
+				CAC7B5632A38CEC000191538 /* NewsListViewModel.swift */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		CAC7B5602A38CE4400191538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAC7B5672A38D31900191538 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7B5682A38D32C00191538 /* NewsListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +267,10 @@
 			dependencies = (
 			);
 			name = OTUSLesson1;
+			packageProductDependencies = (
+				CAC7B5612A38CE4400191538 /* NewsAPINetworking */,
+				CAC7B56E2A38DAF200191538 /* UISystem */,
+			);
 			productName = OTUSLesson1;
 			productReference = CAC085302A2A4554008B94A9 /* OTUSLesson1.app */;
 			productType = "com.apple.product-type.application";
@@ -278,12 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC7B56B2A38D37900191538 /* NewsModel.swift in Sources */,
 				CAC0854B2A2A4C6F008B94A9 /* MapScreen.swift in Sources */,
 				CAC085462A2A4BC9008B94A9 /* CityListCell.swift in Sources */,
 				CAC0855F2A2BA4E9008B94A9 /* TodayWeatherMainItem.swift in Sources */,
 				CAC085422A2A47DC008B94A9 /* MainWeatherScreen.swift in Sources */,
 				CA24FA052A2C8D7200206392 /* MainWeatherViewModel.swift in Sources */,
-				CA24F9F82A2BB94200206392 /* CustomButton.swift in Sources */,
+				CAC7B5692A38D32C00191538 /* NewsListCell.swift in Sources */,
+				CAC7B55E2A38C68200191538 /* NewsListScreen.swift in Sources */,
+				CAC7B5642A38CEC000191538 /* NewsListViewModel.swift in Sources */,
 				CAC085542A2A59D2008B94A9 /* CitiesListViewModel.swift in Sources */,
 				CAC085522A2A584A008B94A9 /* WeatherModel.swift in Sources */,
 				CAC0855D2A2BA16A008B94A9 /* BackgroundView.swift in Sources */,
@@ -495,6 +545,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAC7B5612A38CE4400191538 /* NewsAPINetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewsAPINetworking;
+		};
+		CAC7B56E2A38DAF200191538 /* UISystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UISystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAC085282A2A4554008B94A9 /* Project object */;
 }

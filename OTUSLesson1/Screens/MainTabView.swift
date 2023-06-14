@@ -34,6 +34,11 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
+            NewsListScreen()
+                .tag(4)
+                .tabItem {
+                    Label("News", systemImage: "newspaper")
+                }
         } //: TabView
         .accentColor(.white)
         .onAppear() {
